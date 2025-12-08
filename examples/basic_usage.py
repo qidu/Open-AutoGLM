@@ -90,9 +90,9 @@ def example_multiple_tasks():
     ]
 
     for task in tasks:
-        print(f"\n{'='*50}")
+        print(f"\n{'=' * 50}")
         print(f"任务: {task}")
-        print('='*50)
+        print("=" * 50)
 
         result = agent.run(task)
         print(f"结果: {result}")

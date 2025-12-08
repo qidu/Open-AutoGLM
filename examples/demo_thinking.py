@@ -11,9 +11,9 @@ from phone_agent.model import ModelConfig
 
 
 def main():
-    print("="*60)
+    print("=" * 60)
     print("Phone Agent - Thinking 输出演示")
-    print("="*60)
+    print("=" * 60)
 
     # 配置模型
     model_config = ModelConfig(
@@ -38,9 +38,9 @@ def main():
     print("\n📱 开始执行任务...\n")
     result = agent.run("打开小红书搜索美食攻略")
 
-    print("\n" + "="*60)
+    print("\n" + "=" * 60)
     print(f"📊 最终结果: {result}")
-    print("="*60)
+    print("=" * 60)
 
 
 if __name__ == "__main__":
