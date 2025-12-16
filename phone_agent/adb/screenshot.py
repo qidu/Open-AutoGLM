@@ -43,7 +43,7 @@ def get_screenshot(device_id: str | None = None, timeout: int = 10) -> Screensho
     try:
         # Execute screenshot command
         result = subprocess.run(
-            adb_prefix + ["shell", "screencap", "-p", "/sdcard/tmp.png"],
+            adb_prefix + ["shell", "screencap", "-p", "/storage/caf-999/Download/tmp.png"],
             capture_output=True,
             text=True,
             timeout=timeout,
@@ -56,7 +56,7 @@ def get_screenshot(device_id: str | None = None, timeout: int = 10) -> Screensho
 
         # Pull screenshot to local temp path
         subprocess.run(
-            adb_prefix + ["pull", "/sdcard/tmp.png", temp_path],
+            adb_prefix + ["pull", "/storage/caf-999/Download/tmp.png", temp_path],
             capture_output=True,
             text=True,
             timeout=5,

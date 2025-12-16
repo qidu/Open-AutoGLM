@@ -192,7 +192,7 @@ def check_model_api(base_url: str, model_name: str, api_key: str = "EMPTY") -> b
     print(f"1. Checking API connectivity ({base_url})...", end=" ")
     try:
         # Create OpenAI client
-        client = OpenAI(base_url=base_url, api_key=api_key, timeout=30.0)
+        client = OpenAI(base_url=base_url, api_key=api_key, timeout=1200.0)
 
         # Use chat completion to test connectivity (more universally supported than /models)
         response = client.chat.completions.create(
